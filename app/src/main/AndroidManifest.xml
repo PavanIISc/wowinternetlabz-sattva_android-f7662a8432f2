@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sattvamedtech.fetallite">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".FLApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SystemSyncActivity"
+            android:label="@string/label_system_sync"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AdminRegistrationActivity"
+            android:label="@string/label_registration"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AdminDashboardActivity"
+            android:label="@string/label_admin_dashboard"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.TutorialsActivity"
+            android:label="@string/label_tutorials"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="landscape" />
+
+        <service
+            android:name=".process.DataSocketIntentService"
+            android:exported="false" />
+        <service
+            android:name=".process.PrintSocketIntentService"
+            android:exported="false" />
+        <service
+            android:name=".job.CompressionJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

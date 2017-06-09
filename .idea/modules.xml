@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FetalLite.iml" filepath="$PROJECT_DIR$/FetalLite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sattva_android.iml" filepath="$PROJECT_DIR$/sattva_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wowinternetlabz-sattva_android-f7662a8432f2.iml" filepath="$PROJECT_DIR$/wowinternetlabz-sattva_android-f7662a8432f2.iml" />
+    </modules>
+  </component>
+</project>
